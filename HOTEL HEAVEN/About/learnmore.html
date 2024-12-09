@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More Button</title>
+  <style>
+    /* Style for the details initially hidden */
+    #details {
+      display: none;
+      
+    }
+
+    /* Style for the Learn More button */
+    #learnMoreBtn {
+      cursor: pointer;
+      color: white;
+      background-color: #3498db;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      border-radius: 5px;
+    }
+
+    /* Style for the Learn More button on hover */
+    #learnMoreBtn:hover {
+      background-color: #45a049;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="learnMoreBtn" onclick="toggleDetails()">Learn More</button>
+
+  <div id="details">
+    
+    <p>Private jeep with driver/guide – around LKR 4000 for half day (3-4 hours). Park entrance fees of $25 per adult and $15 per child (under 6 are free) plus a LKR 250 jeep charge, all plus 15% tax. If you are staying overnight in the park, there is a $50 charge per adult and $30 per child.
+    </p>
+  </div>
+
+  <script>
+    // JavaScript function to toggle the visibility of details
+    function toggleDetails() {
+      var details = document.getElementById("details");
+      if (details.style.display === "none") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

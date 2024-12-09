@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management Website</title>
+    <link rel="stylesheet" href="gstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <label class="logo">Hotel Heaven</label>
+        <nav class="nav-area">
+            <a href="../Home/index.html">Home</a>
+            <a href="../About/about.html">About</a>
+            <a href="../Gallery/gallery.html" class="active">Gallery</a>
+            <a href="../Facilities/facilities.html">Facilities</a>
+            <a href="../Contacts/contact.html">Contact</a>
+        </nav>
+    </div>
+<div class="label1">
+    <label>Environment</label>
+</div>
+<div class="gallery-wrap">
+    <img src="../images/backbtn.png" id="backbtn">
+    <div class="gallery">
+        <div>
+            <span><img src="../images/Hotel image 1.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 2.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 3.jpg" alt="Cottages"></span>
+        </div>
+       
+        <div>
+            <span><img src="../images/Hotel image 4.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 5.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 6.jpg" alt="Cottages"></span>
+        </div>
+        
+        <div>
+            <span><img src="../images/Hotel image 7.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 8.jpg" alt="Cottages"></span>
+            <span><img src="../images/Hotel image 9.jpg" alt="Cottages"></span>
+        </div>    
+    </div>
+    <img src="../images/forwardbtn.png" id="forwardbtn">
+</div>
+
+
+<div class="label2">
+    <label>Food</label>
+</div>
+<div class="gallery-wrap">
+    <img src="../images/backbtn.png" id="backbtn2">
+    <div class="gallery2">
+        <div>
+            <span><img src="../images/Food image 1.jpg" alt="Food"></span>
+            <span><img src="../images/Food image 2.jpg" alt="Food"></span>
+            <span><img src="../images/Food image 3.jpg" alt="Food"></span>
+        </div>
+        
+        <div>
+            <span><img src="../images/Food image 4.jpg" alt="Food"></span>
+            <span><img src="../images/Food image 5.jpg" alt="Food"></span>
+            <span><img src="../images/Food image 6.jpg" alt="Food"></span>
+        </div>
+    </div>
+    <img src="../images/forwardbtn.png" id="forwardbtn2">
+</div>
+
+
+<script>
+
+    let scrollcontainer = document.querySelector(".gallery");
+    let backbtn = document.getElementById("backbtn");
+    let forwardbtn = document.getElementById("forwardbtn");
+
+    let scrollcontainer2 = document.querySelector(".gallery2");
+    let backbtn2 = document.getElementById("backbtn2");
+    let forwardbtn2 = document.getElementById("forwardbtn2");
+
+    scrollcontainer.addEventListener("wheel", (evt) =>{
+        evt.preventDefault();
+        scrollcontainer.scrollLeft += evt.deltaY;
+    });
+
+    scrollcontainer2.addEventListener("wheel", (evt) =>{
+        evt.preventDefault();
+        scrollcontainer2.scrollLeft += evt.deltaY;
+    });
+
+    forwardbtn.addEventListener("click", ()=>{
+        scrollcontainer.scrollLeft += 900;
+    });
+    backbtn.addEventListener("click", ()=>{
+        scrollcontainer.scrollLeft -= 900;
+    });
+
+    forwardbtn2.addEventListener("click", ()=>{
+        scrollcontainer2.scrollLeft += 900;
+    });
+    backbtn2.addEventListener("click", ()=>{
+        scrollcontainer2.scrollLeft -= 900;
+    });
+
+</script>
+
+</body>
+</html>

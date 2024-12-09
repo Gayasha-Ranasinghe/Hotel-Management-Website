@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 750px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.logo {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 520;
+    margin-top: 5px;
+    margin-left: -700px;
+}
+
+body{
+    background: url(../images/bg11.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area{
+    margin-right: 65px;
+}
+
+.nav-area a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+}
+
+.nav-area a:hover{
+    border-bottom: 3px solid #fff;
+    border-radius: 2px;
+}
+.nav-area a.active{
+    border-bottom: 3px solid #fff;
+}
+.nav-area .signupBtn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: -50px;
+    transition: .5s;
+}
+
+.nav-area .signupBtn:hover{
+    background: #fff;
+    color: #04330a;
+}
+
+.overlay{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(60px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center center;
+    align-items: center;
+    z-index: 1;
+    top: 10px;
+    left:570px;
+    display: none;
+}
+
+.closebtn{
+    position: absolute;
+    top:20px;
+    right:45px;
+    font-size: 60px;
+    cursor: pointer;
+    color:#fff;
+}
+
+.overlay .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color:#c6eacb;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left:5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #c6eacb;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #c6eacb;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.subBtn{
+    width: 100%;
+    height: 45px;
+    background: #04330a;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.welcome-text{
+    position: absolute;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+.welcome-text h1{
+    text-align: center;
+    color:#c8c8c8;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+ .welcome-text p{
+    color: #fff;
+ }
+
+ .gallery {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+ }
